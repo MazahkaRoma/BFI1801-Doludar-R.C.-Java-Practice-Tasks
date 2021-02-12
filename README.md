@@ -8,7 +8,7 @@ ___Выполнение блоков___
 |Номер задач|Блок 1|Блок 2|Блок 3|Блок 4|Блок 5|
 |-----------|------|------|------|------|------|
 |   1       |:heavy_check_mark:|:white_check_mark:| :white_check_mark:|:white_check_mark:|:white_check_mark:|
-|   2       |:light_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   2       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |   3       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |   4       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |   5       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
