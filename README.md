@@ -7,7 +7,7 @@ ___Выполнение блоков___
 
 |Номер задач|Блок 1|Блок 2|Блок 3|Блок 4|Блок 5|
 |-----------|------|------|------|------|------|
-|   1       |:heavy_check_mark:|:white_check_mark:| :white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   1       |:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |   2       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |   3       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |   4       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
@@ -23,14 +23,18 @@ ___Блок 1___
 
 __Задача 1__ - Перевод минут в секунды. _Выполненно_
 
-Для выполнения данного задания был создан метод convert(). Его тело представленно ниже
+Для выполнения данного задания был создан метод convert(). Его тело представлено ниже
 ```java
 int convert(int minutes)
         {
             return  minutes*60;
         } 
 ```
-__Задача 2__ -  
+__Задача 2__ - Подсчет очков. Баскетбол. _В процессе_  
+Для выполнения данной задачи был создан метод points(). Реализация данного метода представлена ниже
+```java
+ 
+```
 __Задача 3__ -  
 __Задача 4__ -  
 __Задача 5__ -  
