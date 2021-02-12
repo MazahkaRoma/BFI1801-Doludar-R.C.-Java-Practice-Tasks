@@ -8,7 +8,7 @@ ___Выполнение блоков___
 |Номер задач|Блок 1|Блок 2|Блок 3|Блок 4|Блок 5|
 |-----------|------|------|------|------|------|
 |   1       |:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|   2       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   2       |:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |   3       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |   4       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |   5       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
@@ -30,10 +30,13 @@ int convert(int minutes)
             return  minutes*60;
         } 
 ```
-__Задача 2__ - Подсчет очков. Баскетбол. _В процессе_  
+__Задача 2__ - Подсчет очков. Баскетбол. _Выполненно_  
 Для выполнения данной задачи был создан метод points(). Реализация данного метода представлена ниже
 ```java
- 
+ public int points(int TwoPoints, int ThreePoints)
+        {
+            return TwoPoints*2+ThreePoints*3;
+        }
 ```
 __Задача 3__ -  
 __Задача 4__ -  
