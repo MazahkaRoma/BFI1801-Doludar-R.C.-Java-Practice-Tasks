@@ -1,14 +1,198 @@
 package PracticeTasks;
 
 
+import java.util.Arrays;
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args)
     {
-
-
+        String menu= "-----------------ЗАДАНИя ВТОРОГО БЛОКА-----------------\n"+
+                        "1. oppositeHouse(int rightHouse, int streetLong)\n"+
+                        "2. nameShuffle(String FIO)\n"+
+                        "3. discount(int price, int discount)\n"+
+                        "4. differenceMaxMin(double[] mas)\n"+
+                        "5. equal(int a,int b,int c)\n"+
+                        "6. reverse(String upcomingString)\n"+
+                        "7. programmers(float first,float second,float third)\n"+
+                        "8. getXO(String XO)\n"+
+                        "9. bomb(String Sentence)\n"+
+                        "10.sameAscii(String a,String b)\n"+
+                        "0. Выход\n";
+        System.out.println(menu);
+        while(true)
+        {
+            int choice;
+            try
+            {
+                choice = Integer.parseInt(getInput("Введите номер задания")[0]);
+            }
+            catch (Exception exp)
+            {
+                System.out.println("Ошибка ввода: "+ exp.getLocalizedMessage()+"\nПовторите попытку");
+                continue;
+            }
+            switch (choice)
+            {
+                case 1:
+                    while(true)
+                    {
+                        try {
+                            String[] houseAndStreet=getInput("Введите количество номер дома и длинну улицы: ");
+                            System.out.println(oppositeHouse(Integer.parseInt(houseAndStreet[0]),
+                                                             Integer.parseInt(houseAndStreet[1])
+                                                            ));
+                            break;
+                        }
+                        catch (Exception exp){
+                            System.out.println("Ошибка ввода: "+ exp.getLocalizedMessage()+" Повторите попытку");
+                            continue;
+                        }
+                    }
+                    break;
+                case 2:
+                    while(true)
+                    {
+                        try {
+                            String[] FIO=getInput("Введите имя и фамилию");
+                            System.out.println(nameShuffle(FIO[0]));
+                            break;
+                        }
+                        catch (Exception exp){
+                            System.out.println("Ошибка ввода: "+ exp.getLocalizedMessage()+" Повторите попытку");
+                            continue;
+                        }
+                    }
+                    break;
+                case 3:
+                while(true)
+                {
+                    try {
+                        String[] priceData=getInput("Введите данные для рассчета скидки(цена, скидка%)");
+                        System.out.println(discount(Integer.parseInt(priceData[0]), Integer.parseInt(priceData[1])));
+                        break;
+                    }
+                    catch (Exception exp){
+                        System.out.println("Ошибка ввода: "+ exp.getLocalizedMessage()+" Повторите попытку");
+                        continue;
+                    }
+                }
+                break;
+                case 4:
+                    while(true)
+                    {
+                        try {
+                            String[] sArray=getInput("Введите массив чисел: ");
+                            double[] dArray= Arrays.stream(sArray).mapToDouble(Double::parseDouble).toArray();
+                            System.out.println(differenceMaxMin(dArray));
+                            break;
+                        }
+                        catch (Exception exp){
+                            System.out.println("Ошибка ввода: "+ exp.getLocalizedMessage()+" Повторите попытку");
+                            continue;
+                        }
+                    }
+                    break;
+                case 5:
+                    while(true)
+                    {
+                        try {
+                            String[] sArray=getInput("Введите три целых числа: ");
+                            System.out.println(equal(Integer.parseInt(sArray[0]),
+                                                     Integer.parseInt(sArray[1]),
+                                                     Integer.parseInt(sArray[2])
+                                                    ));;
+                            break;
+                        }
+                        catch (Exception exp){
+                            System.out.println("Ошибка ввода: "+ exp.getLocalizedMessage()+" Повторите попытку");
+                            continue;
+                        }
+                    }
+                    break;
+                case 6:
+                    while(true)
+                    {
+                        try {
+                            String[] sRev=getInput("Введите строку для реверса: ");
+                            System.out.println(reverse(sRev[0]));
+                            break;
+                        }
+                        catch (Exception exp){
+                            System.out.println("Ошибка ввода: "+ exp.getLocalizedMessage()+" Повторите попытку");
+                            continue;
+                        }
+                    }
+                    break;
+                case 7:
+                    while(true)
+                    {
+                        try {
+                            String[] sProgrammers=getInput("Введи почасовой заработок трех программистов: ");
+                            System.out.println(programmers( Integer.parseInt(sProgrammers[0]),
+                                                            Integer.parseInt(sProgrammers[1]),
+                                                            Integer.parseInt(sProgrammers[2])
+                                                            ));
+                            break;
+                        }
+                        catch (Exception exp){
+                            System.out.println("Ошибка ввода: "+ exp.getLocalizedMessage()+" Повторите попытку");
+                            continue;
+                        }
+                    }
+                    break;
+                case 8:
+                    while(true)
+                    {
+                        try {
+                            String[] XO=getInput("Введите строку: ");
+                            System.out.println(getXO(XO[0]));
+                            break;
+                        }
+                        catch (Exception exp){
+                            System.out.println("Ошибка ввода: "+ exp.getLocalizedMessage()+" Повторите попытку");
+                            continue;
+                        }
+                    }
+                    break;
+                case 9:
+                    while(true)
+                    {
+                        try {
+                            String[] sentence=getInput("Введите предложение: ");
+                            System.out.println(bomb(sentence.toString()));
+                            break;
+                        }
+                        catch (Exception exp){
+                            System.out.println("Ошибка ввода: "+ exp.getLocalizedMessage()+" Повторите попытку");
+                            continue;
+                        }
+                    }
+                    break;
+                case 10:
+                    while(true)
+                    {
+                        try {
+                            String[] sentence=getInput("Введите строки для сравнения кодов ASCII: ");
+                            System.out.println(sameAscii(sentence[0], sentence[1]));
+                            break;
+                        }
+                        catch (Exception exp){
+                            System.out.println("Ошибка ввода: "+ exp.getLocalizedMessage()+" Повторите попытку");
+                            continue;
+                        }
+                    }
+                    break;
+                case 0:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Неверный ввод. Повторите попытку");
+                    continue;
+            }
+        }
 
     }
     public static int oppositeHouse(int rightHouse, int streetLong) { return streetLong*2-rightHouse+1; }
@@ -20,10 +204,10 @@ public class Main {
         return price-(price*discount)/100;
     }
 
-    public static float differenceMaxMin(float[] mas)
+    public static double differenceMaxMin(double[] mas)
     {
-        float max=Float.MIN_VALUE;
-        float min=Float.MAX_VALUE;
+        double max=Double.MIN_VALUE;
+        double min=Double.MAX_VALUE;
         for(int i = 0; i<mas.length; i++)
         {
             if(mas[i]>max) { max=mas[i]; }
@@ -93,4 +277,18 @@ public class Main {
 
         return sumB==sumA;
     }
+
+    public static String[] getInput(String message)
+    {
+        String[] output=null;
+        System.out.println(message);
+        Scanner scanner=new Scanner(System.in);
+        if(scanner.hasNextLine())
+        {
+            output=scanner.nextLine().split(" ");
+        }
+        return output;
+    }
+
+
 }
