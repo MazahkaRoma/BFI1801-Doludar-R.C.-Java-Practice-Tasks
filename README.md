@@ -5,18 +5,18 @@ ___Выполнение блоков___
 Для выполнения каждого блока задания были созданные соответствующие классы.  
 Краткая справка о процессе выполнения блоков и задач в них представленна в таблице ниже
 
-|Номер задач|Блок 1|Блок 2|Блок 3|Блок 4|Блок 5|
-|-----------|------|------|------|------|------|
-|   1       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|   2       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|   3       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|   4       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|   5       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|   6       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|   7       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|   8       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|   9       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|   10      |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|Номер задач|      Блок 1      |      Блок 2      |      Блок 3      |      Блок 4      |      Блок 5      |      Блок 6      |
+|-----------|------------------|------------------|------------------|------------------|------------------|------------------|
+|   1       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   2       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   3       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   4       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   5       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   6       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   7       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   8       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   9       |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|   10      |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 
 ___Блок 1___
 -
@@ -30,7 +30,7 @@ int convert(int minutes)
             return  minutes*60;
         } 
 ```
-__Задача 2__ - Подсчет очков. Баскетбол. _Выполненно_  
+__Задача 2__ - Подсчет очков. Баскетбол. _Выполнено_  
 Для выполнения данной задачи был создан метод points(). Реализация данного метода представлена ниже
 ```java
  public int points(int TwoPoints, int ThreePoints)
